@@ -1,5 +1,11 @@
 'use strict';
 
+const util = require('util')
+const requestImp = require('@root/request');
+
+const request = util.promisify(requestImp)
+
+/*
 var Bluebird = require('bluebird').getNewLibraryCopy(),
     configure = require('request-promise-core/configure/request2'),
     stealthyRequire = require('stealthy-require');
@@ -16,11 +22,15 @@ try {
     }, module);
 
 } catch (err) {
+*/
     /* istanbul ignore next */
-    var EOL = require('os').EOL;
+    // var EOL = require('os').EOL;
     /* istanbul ignore next */
+/*
     console.error(EOL + '###' + EOL + '### The "request" library is not installed automatically anymore.' + EOL + '### But is a dependency of "request-promise".' + EOL + '### Please install it with:' + EOL + '### npm install request --save' + EOL + '###' + EOL);
+*/
     /* istanbul ignore next */
+/*
     throw err;
 }
 
@@ -49,5 +59,6 @@ request.bindCLS = function RP$bindCLS() {
     throw new Error('CLS support was dropped. To get it back read: https://github.com/request/request-promise/wiki/Getting-Back-Support-for-Continuation-Local-Storage');
 };
 
+*/
 
 module.exports = request;
