@@ -5,6 +5,7 @@ import { getAllAlbums as axiosGetAll } from './src/axios';
 import { getAllAlbums as fetchGetAll } from './src/fetch';
 import { getAllAlbums as gotGetAll } from './src/got';
 import { getAllAlbums as rpGetAll } from './src/rp';
+import { getAllAlbums as rrpGetAll } from './src/root-request';
 import { getAllAlbums as bentGetAll } from './src/bent';
 import { getAllAlbums as apisauceGetAll } from './src/apisauce';
 
@@ -28,6 +29,7 @@ app.get('/axios', axiosGetAll);
 app.get('/fetch', fetchGetAll);
 app.get('/got', gotGetAll);
 app.get('/rp', rpGetAll);
+app.get('/root-request', rrpGetAll);
 app.get('/bent', bentGetAll);
 app.get('/apisauce', apisauceGetAll);
 
